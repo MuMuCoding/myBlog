@@ -1,0 +1,65 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:Verdana,sans-serif;
+}
+ul li{
+    list-style: none;
+}
+.slides{
+    position:relative;
+    width:570px;
+    height:255px;
+    left:40%;
+    top:15px;
+    cursor:pointer;
+}
+.myslide img{
+    border-radius: 5px;
+    width:480.5px;
+}
+
+.pre,.next{
+    position:absolute;
+    top:55%;
+    font-size: 25px;
+    color: seashell;
+    padding:10px;
+}
+.next{
+    right:89px;
+}
+.pre:hover,.next:hover{
+    background-color: rgba(0,0,0,0.4);
+
+}
+
+/* 侧边图片 */
+.side{
+    width:89.5px;
+    height:63.5px;
+    position:absolute;
+    right:0;
+    top:0;
+
+}
+.min img{
+    display:block;
+    width:100.5px;
+    height:85px;
+    box-shadow:2px 2px 5px gray;
+    border-radius: 5px;
+}
+
+.fade{
+    animation-duration:3s;
+    animation-name: fade;
+}
+@keyframes fade{
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}

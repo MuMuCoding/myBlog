@@ -1,0 +1,14 @@
+@font-face{
+    font-family:fontawesome;
+    src:url('/fonts/fontawesome-webfont.ttf')
+};
+
+@font-face{
+    font-family:fontello;
+    src:url('/fonts/fontello.ttf')
+}
+
+/* @font-face{
+    font-family:SentyPea;
+    src:url('/fonts/SentyPea.ttf')
+} */

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/inside-header.css">
+    <link rel="stylesheet" href="./css/content-banner.css">
+    <link rel="stylesheet" href="./css/content-sidetxt.css">
+</head>
+
+<body>
+    <!-- ------------------------头部--------------------------- -->
+    <header>
+        <div class="header-box">
+            <p>生活中，我们离不开情话，更离不开爱情警句，英文爱情名言更适合于异地恋人，让恋人关系更好！！！！对于英语初学者来说，如果有爱情的动力在，我想学习英语爱情情话就会更加给力！！！</p>
+            <div class="album r">
+                <a href="#">
+                    <img src="./assets/inside/y1.jpg" alt="1">
+                </a>
+            </div>
+            <div class="album l">
+                <a href="#">
+                    <img src="./assets/inside/y2.jpg" alt="2">
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- ------------------------头部--------------------------- -->
+    <!-- ------------------------导航--------------------------- -->
+    <nav class="nav">
+        <div class="title">余修林的博客</div>
+        <ul>
+            <li><a href="#" class="note">前端笔记</a></li>
+            <li><a href="#">收藏必备</a></li>
+            <li><a href="#">博客模板</a></li>
+            <li><a href="#">留言板</a></li>
+        </ul>
+    </nav>
+    <!-- ------------------------导航--------------------------- -->
+    <!-- ------------------------返回顶部------------------------- -->
+    <div class="rock">
+        <img src="./assets/inside/hj.png" alt="返回火箭">
+    </div>
+    <!-- ------------------------返回顶部------------------------- -->
+    <!-- ------------------------内容部分------------------------- -->
+    <section>
+        <div class="banner-box">
+            <div class="slides">
+                <ul>
+                    <li class="myslide fade"><img src="./assets/inside/1.jpg" alt="1"></li>
+                    <li class="myslide fade"><img src="./assets/inside/2.jpg" alt="2"></li>
+                    <li class="myslide fade"><img src="./assets/inside/3.jpg" alt="3"></li>
+                    <li class="myslide fade"><img src="./assets/inside/4.jpg" alt="4"></li>
+                </ul>
+                <a class="pre" onclick="slidePlus(-1)">
+                    < </a>
+                        <a class="next" onclick="slidePlus(1)"> > </a>
+
+                        <div class="side">
+                            <ul>
+                                <li class="min" onclick="currentSlide(0)"><img src="./assets/inside/1.jpg" alt="1"></li>
+                                <li class="min" onclick="currentSlide(1)"><img src="./assets/inside/2.jpg" alt="2"></li>
+                                <li class="min" onclick="currentSlide(2)"><img src="./assets/inside/3.jpg" alt="3"></li>
+                                <li class="min" onclick="currentSlide(3)"><img src="./assets/inside/4.jpg" alt="4"></li>
+                            </ul>
+                        </div>
+            </div>
+            <div class="art">
+                <h2 class="art-txt">每日推荐</h2>
+                <ul>
+                    <li><a href="">npx使用教程及作用</a></li>
+                    <li><a href="">CSS有关定位总结(绝对定位、相对定位、固定定位)</a></li>
+                    <li><a href="">CSS解决盒子高度塌陷问题</a></li>
+                    <li><a href="">HTML中的列表总结</a></li>
+                    <li><a href="">swiper基本使用</a></li>
+                    <li><a href="https://github.com/MuMuCoding">点击进入我的github</a></li>
+                </ul>
+            </div>
+            <article>
+                <aside class="leftBox">
+                    <div class="label">
+                        <h2><span>热门标签</span></h2>
+                        <div class="labelBtn">
+                            <button><a href="#">Github</a></button>
+                            <button><a href="#">javascript</a></button>
+                            <button><a href="#">node.js</a></button>
+                            <button><a href="#">vue.js</a></button>
+                            <button><a href="#">ajax</a></button>
+                            <button><a href="#">webpack</a></button>
+                            <button><a href="#">TypeScript</a></button>
+                        </div>
+                    </div>
+                    <div class="artMusic">
+                        <h2><span>交个朋友吧</span></h2>
+                        <img src="./assets/inside/wechat.jpg" alt="作者微信">
+                        <h5><span>加我微信，进入前端学习交流群！</span></h5>
+                    </div>
+                </aside>
+                <div class="tecStudy">
+                    <h2><span>技术栈学习</span></h2>
+                    <div class="artical">
+                        <h3><span>计算机基础</span></h3>
+                        <p><span>发布时间:2022/1/24</span>&nbsp;&nbsp;<span>作者: 林之</span></p>
+                        <dl class="imagText">
+                            <dt>
+                                <img src="./assets/inside/text.png" alt="文章图">
+                            </dt>
+                            <dd>
+                                <a href="#">计算机基础是计算机学科的基石，只有学好了计算机基础才可以让自己在编程方面更加如鱼得水！</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="artical">
+                        <h3><span>前端基础</span></h3>
+                        <p><span>发布时间:2022/1/24</span>&nbsp;&nbsp;<span>作者: 林之</span></p>
+                        <dl class="imagText">
+                            <dt>
+                                <img src="./assets/inside/text.png" alt="文章图">
+                            </dt>
+                            <dd>
+                                <a href="#">前端基础是非常重要的前端知识: HTML、CSS、JavaScript、Ajax...</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="artical">
+                        <h3><span>前端工具</span></h3>
+                        <p><span>发布时间:2022/1/24</span>&nbsp;&nbsp;<span>作者: 林之</span></p>
+                        <dl class="imagText">
+                            <dt>
+                                <img src="./assets/inside/text.png" alt="文章图">
+                            </dt>
+                            <dd>
+                                <a href="#">前端工具非常之多，如果想成为一个高级前端工程师，你必须学会一些前端工具: webpack、glup、Git...</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="artical">
+                        <h3><span>后端基础</span></h3>
+                        <p><span>发布时间:2022/1/24</span>&nbsp;&nbsp;<span>作者: 林之</span></p>
+                        <dl class="imagText">
+                            <dt>
+                                <img src="./assets/inside/text.png" alt="文章图">
+                            </dt>
+                            <dd>
+                                <a href="#">后端基础也是后端中最重要的部分，当下比较流行的后端是'Java',暂时本博客还停留在 'Node.js'阶段</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+        </div>
+        </article>
+    </section>
+    <!-- ------------------------内容部分------------------------- -->
+
+    <!-- ------------------------底部------------------------- -->
+    <div class="floor">
+        <h3>@yuxiulin的个人博客</h3>
+        <h4>邮箱: zhilin4201@gmail.com</h4>
+    </div>
+    <!-- ------------------------底部------------------------- -->
+    <script src="./js/common.js"></script>
+    <script src="js/banner-box.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/front-note.js"></script>
+</body>
+
+</html>

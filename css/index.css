@@ -1,0 +1,235 @@
+@import url('../css/font.css');
+
+html,body{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    overflow-x:hidden;
+}
+
+/* ********************************定义全局变量******************************* */
+:root{
+    /* **********************主题颜色******************** */
+    --text-gray:#808080;
+    --text-light:#688888;
+    /* **********************主题颜色******************** */
+    /* **********************主题字体******************** */
+    --fontawesome:'fontawesome',cursive;
+    --fontello:'fontello',cursive;
+    --SentyPea:'SentyPea',cursive;
+
+    /* **********************主题字体******************** */
+}
+/* ********************************定义全局变量******************************* */
+
+/* ********************************全局公共类******************************* */
+a{
+    text-decoration:none;
+}
+.flex-row{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+h1{
+     font-family:var(--fontawesome);
+     font-size: 2.5rem;
+}
+
+.text-gray{
+    color:var(--text-gray)
+}
+
+button{
+    width:150px;
+    height:60px;
+    background-color: #ccc;
+    border-radius: 15px;
+    outline:#ccc;
+    /* border:#ccc */
+    border:none;
+}
+
+/* ********************************全局公共类******************************* */
+
+   /* **********************navigation******************** */
+   .nav{
+       padding:0 2rem;
+       margin:0;
+       background-color: white;
+       height:0rem;
+       min-height:10vh;
+       overflow:hidden;
+       transition: height 0.6s ease;
+   }
+
+   .nav .nav-menu{
+       justify-content:space-between;
+   }
+
+   .nav .toggle-collapse{
+    position:absolute;
+    top:0;
+    left:90%;
+    cursor:pointer;
+    display:none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display:flex;
+    justify-content:flex-end;
+    padding:1.4rem 0;
+
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size:1.7rem;
+    color:var(--text-gray)
+}
+.collapse{
+    height:30rem;
+}
+
+   .nav .nav-menu .nav-brand a{
+       font-size: 1.6rem;
+       font-family: var(--SentyPea);
+       display:block;
+       padding: 1rem 0;
+       
+   }
+
+   /* .nav .nav-menu .nav-brand{
+       background-color: red;
+   } */
+   .nav .nav-menu .nav-items{
+       display:flex;
+       margin:0 ;
+
+   }
+   .nav .nav-menu .nav-items .nav-link{
+       padding:1.6rem 1rem;
+       font-size:1.1rem;
+       font-family:var(--fontello);
+       position:relative;
+       border-bottom: 1px solid black;
+       border-radius: 3px;
+       margin:0 30px;
+
+   }
+   .nav .nav-menu .nav-items .nav-link:hover{
+       background-color: skyblue;
+       border-radius: 3px;
+   }
+   .nav .nav-menu .nav-items .nav-link:hover a{
+       color:white;
+   }
+   .nav .nav-menu .connect{
+       padding:1.4rem 0;
+       font-size: 1.1rem;
+   }
+   .nav .nav-menu .connect i{
+       padding:0.2rem
+   }
+
+   .nav .nav-menu .connect i:hover{
+    color:green
+}
+    /* **********************navigation******************** */
+
+    /* **********************主要部分******************** */
+
+    /* **********************标题部分******************** */
+    main .site-title{
+        background-image:url(../assets/title.jpg);
+        background-size:cover;
+        height:110vh;
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        /* align-items: center; */
+    }
+
+    main .site-background{
+        padding-top:10rem;
+        text-align:center;
+        color:rgb(207, 123, 123)
+    }
+
+    main .site-background h1,h3{
+        margin:3rem;
+    }
+
+    main .site-title .btn{
+        margin:1.7rem;
+        background-color:skyblue;
+        color:white;
+        font-weight: 400;
+    }
+
+    main .site-title .btn:hover{
+        background: transparent;
+        border:1px solid white;
+    }
+    /* **********************标题部分******************** */
+
+    /* **********************网站滚动部分************************* */
+    /* main .blog{
+        background:url('../assets/Blog-post/blogbackground.jpg');
+        background-size: cover;
+        height:100vh;
+        width:100%;
+        display:flex;
+        background-repeat:no-repeat;
+        justify-content: center;
+        position:relative
+    }
+    main .blog .blog-post{
+        padding-top:1rem;
+
+        width:550px;
+        height:600px;
+
+        position: relative;
+    }
+    main .blog .blog-post .bolg-content{
+        display:flex;
+        flex-direction:column; */
+        /* 我发现 text-align所谓的改变行内内容，是可以改变整个div盒子的！ */
+        /* text-align:center;
+        width:80%;
+        margin: 0 2rem;
+        box-shadow:1 15px 20px rgba(0,0,0,.2)
+    }
+
+    main .blog .blog-post .bolg-content .btn-blog{
+        padding: 0 1rem;
+        background-color: red;
+   
+    }
+    main .blog .blog-post .bolg-content span{
+        display:block;
+        padding:0.5rem 0;
+    } */
+
+    /* **********************网站滚动部分************************* */
+    /* **********************主要部分******************** */
+
+    /* **********************适配平板和手机******************** */
+
+    /* 设置当屏幕宽度小于750px时 */
+    @media only screen and (max-width:750px){
+        .nav .nav-menu,.nav .nav-items{
+            flex-direction:column;
+        }
+        .nav .nav-menu .nav-items .nav-link{
+            background-color: #ccc;
+        }
+        .nav .toggle-collapse{
+            display: initial;
+        }
+    }
+    /* **********************适配平板和手机******************** */

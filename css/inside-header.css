@@ -1,0 +1,104 @@
+/* 公共类 */
+@charset "utf-8";
+*{
+    padding:0;
+    margin:0;
+}
+a{text-decoration:none;color:black;display:inline-block}
+ul li{list-style: none;}
+body { color: #333; background: #559664 ; background-size: 100%; height:1000px;}
+
+/* 头部 */
+header{
+    width:100%;
+    height:270px;
+    background:url("../assets/inside/inside-header.jpg") top center;
+}
+
+.header-box p{
+    position:absolute;
+    top:30px;
+    left:20%;
+    width:300px;
+    color: white;
+    text-shadow:1px 1px 2px pink;
+    font-size: 14px;
+    line-height:26px;
+}
+
+.header-box .album{
+    position:absolute;
+    top:130px;
+    right:20%;
+    cursor:url('../assets/inside/album-cursor.png'),pointer;
+    transition: transform 0.3s linear 0s;
+    width: 175px; 
+    height: 175px;
+}
+
+.header-box .album img{
+    width: 135px; 
+    height: 120px;
+}
+
+/* 导航 */
+.nav{
+    display: inline-block;
+    width:100%;
+    height:60px;
+
+}
+.title{
+    margin:-30px 0 0 15%;
+    color:white;
+    font-size:20px;
+    -webkit-box-reflect:below 5px linear-gradient(transparent,white);
+    
+}
+.nav ul{
+    display:flex;
+    justify-content: space-around;
+    padding:25px 0;
+    background-color: green;
+}
+.nav ul li a{
+    color:white;
+    font-size:18px;
+}
+/* 返回顶部火箭 */
+.rock{
+    position:fixed;
+    right:0;
+    top:72%;
+    cursor:pointer;
+    /* 缩小页面的小火箭并不能完全能被点中--------------------- */
+}
+.rock img{
+    width:60px;
+}
+/* 中部身体 */
+.banner-box{
+    position:relative;
+    height:1320px;
+    width:1000px;
+    background-color: rgba(250, 250, 250, 0.4);
+    margin: 50px auto;
+    border-radius:10px;
+}
+
+
+/* 底部 */
+.floor{
+    width: 100%;
+    height:70px;
+    background-color: green;
+}
+.floor h3{
+    text-align:center;
+    padding-top: 15px;
+}
+.floor h4{
+    text-align:center;
+    padding-bottom: 10px;
+}
+

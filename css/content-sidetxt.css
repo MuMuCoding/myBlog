@@ -1,0 +1,139 @@
+.art .art-txt{
+    position:absolute;
+    top:10px;
+    left:15px;
+    padding-bottom:8px;
+    padding-right:285px;
+    border-bottom: 3px solid greenyellow;
+}
+.art ul{
+    top:35px;
+    left:30px;
+    position:absolute;
+}
+.art ul li{
+    list-style:initial;
+    margin:10px 0;
+    padding-top:15px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 6px
+}
+.art ul li a:hover{
+    font-weight: 800;
+    color:lawngreen;
+    cursor:pointer;
+}
+/* 标签 */
+.leftBox{
+    position:relative;
+    top:120px;
+}
+/* 为什么h3中加了span后  left就可以移动h3中的文字了 -----------------*/
+.leftBox .label h2{
+    position:absolute;
+    left:15px;
+    padding-bottom: 8px;
+    padding-right:280px;
+    border-bottom: 3px solid greenyellow;
+}
+.labelBtn{
+    position:absolute;
+    width:380px;
+    top:60px;
+    left:20px;
+    margin-left:10px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.labelBtn button{
+    margin-right:40px;
+    margin-bottom:20px;
+    border: 2px solid #ccc;
+    background-color: rgba(0,0,0,0.1);
+}
+.labelBtn button:hover{
+    background-color: #ccc;
+}
+.labelBtn button a{
+    padding: 13px;
+}
+
+/* 交个朋友 */
+/* .artMusic{
+    position:relative;
+    top:250px;
+} */
+.artMusic h2{
+    position:absolute;
+    top: 260px;
+    left:15px;
+    padding-bottom: 8px;
+    padding-right:280px;
+    border-bottom: 3px solid greenyellow;
+
+}
+.artMusic img{
+    position:absolute;
+    top:320px;
+    width:200px;
+    left:30px;
+    border-radius: 5px;
+}
+.artMusic h5{
+    position:absolute;
+    top: 530px;
+    left:35px;
+    color:rgb(226, 70, 96);
+}
+
+/* 技术栈学习 */
+.tecStudy{
+    position:absolute;
+    margin-left:400px;
+    margin-top:100px;
+}
+.tecStudy h2{
+    margin-top:20px;
+    padding-bottom: 8px;
+    padding-right:450px;
+    border-bottom: 3px solid greenyellow;
+}
+.tecStudy .artical{
+    width:520px;
+    height:200px;
+    background-color: rgba(190, 226, 196, 0.3);
+    border-radius:20px;
+    margin-top: 20px;
+    margin-left:20px;
+    box-shadow: 5px 5px 5px rgb(179, 240, 179);
+}
+.tecStudy .artical h3{
+    position:absolute;
+    margin-top:10px;
+    margin-left:10px;
+}
+.tecStudy .artical p{
+    position:absolute;
+    margin-top:38px;
+    margin-left:10px;
+    font-size: 10px;
+    color:white
+}
+.tecStudy .artical img{
+    width:130px;
+    margin-top:60px;
+    cursor:pointer;
+}
+.imagText a{
+    position:absolute;
+    left:35%;
+    margin-top:-20%;
+    width:300px
+}
+
+.imagText a:hover{
+    text-decoration:underline;
+}
+
+
